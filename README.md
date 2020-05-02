@@ -12,13 +12,15 @@ A minimal PyTorch implementation of YOLOv4.
 - [x] Inference
 - [ ] Train
 
+![](nice.gif)
+![](nice2.gif)
+
 # Weight
 
 - baidu(https://pan.baidu.com/s/1dAGEW8cm-dqK14TbhhVetA     Extraction code:dm5b)
 - google(https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT)
 
-![](nice.gif)
-![](nice2.gif)
+
 ![image](https://user-gold-cdn.xitu.io/2020/4/26/171b5a6c8b3bd513?w=768&h=576&f=jpeg&s=78882)
 
 # Inference

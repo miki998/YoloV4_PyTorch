@@ -5,5 +5,5 @@ ttest
 __pycache__
 .idea
 runs
-
+.ipynb_checkpoints
 predictions.jpg

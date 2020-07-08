@@ -411,7 +411,7 @@ def image2torch(img):
     return img
 
 
-def do_detect(model, img, conf_thresh, nms_thresh, use_cuda=1):
+def do_detect(model, img, conf_thresh, nms_thresh, use_cuda=True):
     model.eval()
     t0 = time.time()
 
@@ -448,7 +448,10 @@ def do_detect(model, img, conf_thresh, nms_thresh, use_cuda=1):
         for m in anchor_masks[i]:
             masked_anchors += anchors[m * anchor_step:(m + 1) * anchor_step]
         masked_anchors = [anchor / strides[i] for anchor in masked_anchors]
-        boxes.append(get_region_boxes1(list_boxes[i].data.numpy(), 0.6, 80, masked_anchors, len(anchor_masks[i])))
+        if use_cuda:
+            boxes.append(get_region_boxes1(list_boxes[i].cpu().data.numpy(), 0.6, 80, masked_anchors, len(anchor_masks[i])))
+        else:
+            boxes.append(get_region_boxes1(list_boxes[i].data.numpy(), 0.6, 80, masked_anchors, len(anchor_masks[i])))
         # boxes.append(get_region_boxes(list_boxes[i], 0.6, 80, masked_anchors, len(anchor_masks[i])))
 
     boxes = boxes[0][0] + boxes[1][0] + boxes[2][0]

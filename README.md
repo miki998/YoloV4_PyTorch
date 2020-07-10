@@ -39,7 +39,7 @@ Reference:
 - https://github.com/eriklindernoren/PyTorch-YOLOv3
 - https://github.com/marvis/pytorch-caffe-darknet-convert
 - https://github.com/marvis/pytorch-yolo3
-
+- https://github.com/Tianxiaomo/pytorch-YOLOv4
 ```
 @article{yolov4,
   title={YOLOv4: YOLOv4: Optimal Speed and Accuracy of Object Detection},

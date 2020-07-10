@@ -6,6 +6,7 @@
 A minimal PyTorch implementation of YOLOv4.
 - Paper Yolo v4: https://arxiv.org/abs/2004.10934
 - Source code:https://github.com/AlexeyAB/darknet
+- Source code for pytorch: https://github.com/Tianxiaomo/pytorch-YOLOv4 (highly inspired)
 - More details: http://pjreddie.com/darknet/yolo/
 
 
